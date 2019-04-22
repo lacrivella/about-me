@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Nixie+One');
+* {
+    font-family: 'Nixie One', cursive;
+    text-align: center;
+    color: #424242;
+}
+h1, h3 {
+    font-family: 'Major Mono Display', monospace;
+    background-color: #CAD7DF;
+}
+
+h2 {
+    background-color: #CAD7DF;
+    font-family: 'Nixie One', cursive;
+    color: #B2BCC2;
+}
+
