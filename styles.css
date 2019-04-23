@@ -33,3 +33,24 @@ li {
     width: 400px;
     height: 560px;
 }
+
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+input {
+    height: 30px;
+    width: 200px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+button {
+    border: #596A6F 2px solid;
+    background-color: #CAD7DF;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 1.2em;
+    height: 50px;
+    width: 200px;
+}
