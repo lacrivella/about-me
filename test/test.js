@@ -40,7 +40,7 @@ test('all answers are wrong expecting 0', function(assert) {
 
 test('one of the answers is wrong expecting 2', (assert) => {
     const schoolAnswer = 'glass';
-    const pnwAnswer = '2015';
+    const pnwAnswer = 'pittsburgh';
     const animalAnswer = 'dragon';
     const expected = 2;
 
@@ -51,11 +51,11 @@ test('one of the answers is wrong expecting 2', (assert) => {
     assert.equal(score, expected);
 });
 
-test('all answers are in caps expecting 0', (assert) => {
+test('all answers are in caps expecting 3', (assert) => {
     const schoolAnswer = 'GLASS';
-    const pnwAnswer = 'Twenty Fifteen';
-    const animalAnswer = 'Raccoon';
-    const expected = 0;
+    const pnwAnswer = 'PITTSBURGH';
+    const animalAnswer = 'RaCCoon';
+    const expected = 3;
 
     //act
     const score = quizScore(schoolAnswer, pnwAnswer, animalAnswer);
