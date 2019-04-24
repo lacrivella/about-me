@@ -7,7 +7,7 @@ function quizScore(schoolAnswer, pnwAnswer, animalAnswer){
         score += 1;
     }
 
-    if(pnwAnswer === '2015'){
+    if(pnwAnswer === 'pittsburgh' || pnwAnswer === 'pennsylvania' || pnwAnswer === 'pittsburgh, pennsylvania'){
         score += 1;
     }
     
