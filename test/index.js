@@ -9,5 +9,5 @@ global.document = window.document;
 */
 
 require = require('esm')(module);
-module.exports = require("./tests.js");
+module.exports = require("./test.js");
 

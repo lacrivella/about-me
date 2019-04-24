@@ -6,19 +6,24 @@ const schoolInput = document.getElementById('school-answer');
 const pnwInput = document.getElementById('pnw-answer');
 const animalInput = document.getElementById('animal-answer');
 
-const resultParagraph = document.getElementById('result-paragraph')
+const resultParagraph = document.getElementById('result-paragraph');
+
+console.log('linked');
 
 submitButton.addEventListener('click', () => {
+    console.log('yoyo');
     event.preventDefault();
+    
+    const schoolAnswer = schoolInput.value;
+    const pnwAnswer = pnwInput.value;
+    const animalAnswer = animalInput.value;
 
-   const schoolAnswer= schoolInput.value;
-   const pnwAnswer = pnwInput.value;
-   const animalAnswer = animalInput.value;
+    const score = quizScore(schoolAnswer, pnwAnswer, animalAnswer);
 
-   const score = quizScore(schoolAnswer, pnwAnswer, animalAnswer);
+    const message = 'Your got ' + score + 'correct! That is ' + (score / 3) * 100 + '%';
+    resultParagraph.textContent = message;
 
-   const message = 'Your got ' + score + 'correct! That is ' + (score / 3) * 100 + '%';
-   resultParagraph.textContent = message;
+});
 
 
 //   TRYING TO MAKE RESULTS DIFFERENT COLORS, BUT CAN'T SEE RESULTS 
@@ -40,4 +45,3 @@ submitButton.addEventListener('click', () => {
 
 //             scoreEl.textContent = 'Your got ' + score + 'correct! That is ' + (score / 3) * 100 + '%';
 //         }
-   });
