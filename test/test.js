@@ -1,9 +1,11 @@
 const test = QUnit.test;
 
 function quizScore(schoolAnswer, pnwAnswer, animalAnswer){
+    schoolAnswer = schoolAnswer.toLowerCase();
+    animalAnswer = animalAnswer.toLowerCase();
     let score = 0
 
-    if(schoolAnswer === 'glass') {
+    if(schoolAnswer === 'glass' || schoolAnswer === 'glass construction') {
         score += 1;
     }
 
