@@ -1,24 +1,26 @@
+import quizScore from '../src/quizScore.js';
 const test = QUnit.test;
 
-function quizScore(schoolAnswer, pnwAnswer, animalAnswer){
-    schoolAnswer = schoolAnswer.toLowerCase();
-    animalAnswer = animalAnswer.toLowerCase();
-    let score = 0
+// FUNCTION 
+//function quizScore(schoolAnswer, pnwAnswer, animalAnswer){
+//     schoolAnswer = schoolAnswer.toLowerCase();
+//     animalAnswer = animalAnswer.toLowerCase();
+//     let score = 0
 
-    if(schoolAnswer === 'glass' || schoolAnswer === 'glass construction') {
-        score += 1;
-    }
+//     if(schoolAnswer === 'glass' || schoolAnswer === 'glass construction') {
+//         score += 1;
+//     }
 
-    if(pnwAnswer === '2015'){
-        score += 1;
-    }
+//     if(pnwAnswer === '2015'){
+//         score += 1;
+//     }
     
-    if(animalAnswer === 'raccoon'){
-        score += 1;
-    }
+//     if(animalAnswer === 'raccoon'){
+//         score += 1;
+//     }
 
-    return score;
-};
+//     return score;
+// };
 
 test('all answers are wrong expecting 0', function(assert) {
     //Arrange
@@ -50,7 +52,7 @@ test('one of the answers is wrong expecting 2', (assert) => {
 });
 
 test('all answers are in caps expecting 0', (assert) => {
-    const schoolAnswer = 'Glass';
+    const schoolAnswer = 'GLASS';
     const pnwAnswer = 'Twenty Fifteen';
     const animalAnswer = 'Raccoon'
     const expected = 0
