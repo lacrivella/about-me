@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="src/styles.css">
     <title>Leigh-Ann's Website</title>
 </head>
 <body>
@@ -14,23 +14,25 @@
   <ul>
       <li><a href="#basics">Basics</a></li>
       <li><a href="#favorite">Favorites</a></li>
-      <li><a href="#">Glass</a></li>
+			<li><a href="#glass">Glass</a></li>
+			<li><a href="#quiz">Quiz</a></li>
   </ul> 
   <hr>
   <div id="basics">
       <h2>Basics</h2>
       <p>Leigh-Ann is originally from Pittsburgh, Pennsylvania. 
-    She attended the Ohio State University (<em>go bucks!</em>), and recieved a BFA in Glass Construction.
-    After graduation, Leigh-Ann excavated stained glass from a medival archeology site in Ireland.
-    In 2015, Leigh-Ann relocated to the PNW for a job oppurtunity at Pilchuck Glass School.
-    After spending several summers making glass art in the woods,</p>  
-    </div> 
+    	She attended the Ohio State University (<em>go bucks!</em>), and recieved a BFA in Glass Construction.
+    	After graduation, Leigh-Ann excavated stained glass from a medival archeology site in Ireland.
+    	In 2015, Leigh-Ann relocated to the PNW for a job oppurtunity at Pilchuck Glass School.
+			After spending several summers making glass art in the woods, Leigh-Ann switched her career for the more
+			practical creative career in programming.</p>  
+  </div> 
     
-<hr>
-<div id="favorite">
-    <h2>Favorites</h2>
+	<hr>
+	<div id="favorite">
+  	<h2>Favorites</h2>
     <h3>Animals</h3>
-        <ol>
+      	<ol>
             <li>Giraffe</li>
             <li>Raccoon</li>
             <li>Bluejays</li>  
@@ -42,22 +44,26 @@
             <li>the Bad Seed</li>
             <li>All About Eve</li>
           </ol>
-</div>
-<hr>
-<div>
-    <h2>Glass</h2>
+	</div>
+	<hr>
+	<div id="glass">
+  	<h2>Glass</h2>
     <img src="/asset/glasstools.jpeg" alt="an assortment of glassblowing tools on a bench" class="glassSample">
     <img src="/asset/jackline.jpeg" alt="a person using metal jacks to put a score line in hot glass" class="glassSample">
     <img src="/asset/gloryhole.jpeg" alt="a blowpipe heating up a piece in a gloryhole" class="glassSample">
-
-</div>
-
-  <!-- 
-      Have a main About Me Header
-      Image under header
-      Create an unorder list that links to different parts of the page Div with ID?
-      Have an order list
-      style the css
-   -->
+	</div>
+	<section id="quiz">
+  	<h2>Take the Quiz</h2>
+    <label for="school-answer">What did I study in school?</label>
+    <input id="school-answer">
+    <label for="pnw-answer">Where did I move from?</label>
+    <input id="pnw-answer">
+    <label for="animal-answer">Name my favorite animal besides giraffes and bluejays</label>
+		<input id="animal-answer">
+		<br>
+		<button id="submit-button">Submit Answers</button>
+		<p id="result-paragraph">This is gonna be results!</p>
+  </section>
+<script type="module"  src="src/app.js"></script>
 </body>
 </html>
